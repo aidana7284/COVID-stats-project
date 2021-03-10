@@ -11,5 +11,5 @@ $.ajax({
                 document.write("There were " + count + " case(s) on" + userDate + ".")
             };
         };
-    };
-});
+    }
+    });
