@@ -4,12 +4,13 @@ $.ajax({
     dataType: 'json',
     success: function(data) {
         console.log(data);
-        var data = "05/04/2020"
-        for (var i=0; i < data.length; i++){
-            if (data[i].date == ("  " + userDate)){
+        for (var i = 0; i < data.length; i++) {
+            if (data[i].date == ("   " + userDate)){
                 var count = (data[i]["_" + userDate])
+                var caseCount = (data[i]["_" + userDate + "CASE_COUNT"])
                 document.write("There were " + count + " case(s) on" + userDate + ".")
             };
         };
     }
     });
+    
