@@ -5,7 +5,7 @@ $.ajax({
     success: function(data) {
         console.log(data);
         for (var i = 0; i < data.length; i++) {
-            if (data[i].date == ("   " + userDate)){
+            if (data[i].date == (userDate)){
                 var count = (data[i]["_" + userDate])
                 var caseCount = (data[i]["date_of_interest" + "_" + userDate + "T00:00:00.000" + "_CASE_COUNT"])
                 document.write("There were " + count + " case(s) on" + userDate + ".")
