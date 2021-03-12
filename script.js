@@ -9,7 +9,7 @@ $.ajax({
             if (data[i].date_of_interest == (userDate + "T00:00:00.000")){ //This if statement makes sure that the date the user put in is a valid date that the API contains. It also adds the time to the end so that it will match the date DATE_OF_INTEREST column in the dataset
                 var count = (data[i].case_count); //This goes through the dataset and makes the count var into the amount of cases on that day 
                 var death = (data[i].death_count); //This goes through the dataset and makes the count var into the amount of deaths on that day.
-                document.write("There were " + count + " case(s) and " + death + " death(s)" + " on " + userDate); //This  takes all the above variables and puts them in document.write for so the user can see the result.
+                document.write("There were " + count + " case(s) and " + death + " death(s)" + " on " + userDate); //This  takes all the above variables and puts them in document.write so the user can see the result.
             }
         }
     }
